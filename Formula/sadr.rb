@@ -11,7 +11,7 @@ class Sadr < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/pedrohpereira74/sadr/releases/download/v0.2.1/sadr_Darwin_x86_64.tar.gz"
-      sha256 "571c262dfcc6a00f51074bc3b0368df4046cecbf3a792ce8de27fd426f7fa462"
+      sha256 "a6fe243bc9aaddff5c4cdda358abd28167cb772366823659efe1f77d91f9c5c3"
 
       define_method(:install) do
         bin.install "sadr"
@@ -19,7 +19,7 @@ class Sadr < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/pedrohpereira74/sadr/releases/download/v0.2.1/sadr_Darwin_arm64.tar.gz"
-      sha256 "b3f7dc98b4769fc852bdfe50719a37be5c21d27b8c7a54876f62c3c2933f3649"
+      sha256 "9f7bc856f5d598f4b635f00fd8f84db99f3f4447bd7e26d14ec16d86927f2ce2"
 
       define_method(:install) do
         bin.install "sadr"
@@ -30,14 +30,14 @@ class Sadr < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/pedrohpereira74/sadr/releases/download/v0.2.1/sadr_Linux_x86_64.tar.gz"
-      sha256 "958bb457e7843ab79dc121d2cf9eeef6c8b44a4ca9b27b7c7a140fcfcc3a05f2"
+      sha256 "39fa34f6f05de64a1ca89ec55e999f674ce541269db7f4696b76fb863fcff080"
       define_method(:install) do
         bin.install "sadr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/pedrohpereira74/sadr/releases/download/v0.2.1/sadr_Linux_arm64.tar.gz"
-      sha256 "2fdd8dd1a84f7838e2b9285a7b00f3f69f1ee89dcf53f9edad8301e2b2c9a818"
+      sha256 "7c7e39c5ece0e1f0be59b3eb5c3abfa19958e889aa4d337367f69a3ba08b39ed"
       define_method(:install) do
         bin.install "sadr"
       end
