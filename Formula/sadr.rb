@@ -5,21 +5,21 @@
 class Sadr < Formula
   desc "Capture code with context. Because snippets without a 'why' are sadr."
   homepage "https://github.com/pedrohpereira74/sadr"
-  version "0.4.2"
+  version "0.4.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pedrohpereira74/sadr/releases/download/v0.4.2/sadr_Darwin_x86_64.tar.gz"
-      sha256 "b18b92e72cf06d028af44442ba4eb16c8d09665f929f1735af4c3bfe750c6ab7"
+      url "https://github.com/pedrohpereira74/sadr/releases/download/v0.4.3/sadr_Darwin_x86_64.tar.gz"
+      sha256 "edde4593bdc4b3f3b35d3ad98b698756338f4569d00dd5686218c5636f185140"
 
       define_method(:install) do
         bin.install "sadr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pedrohpereira74/sadr/releases/download/v0.4.2/sadr_Darwin_arm64.tar.gz"
-      sha256 "ff2e2472a8430aeccac4fad77bdbcb8fdb5b2203cfba2fb17e880b58763ec878"
+      url "https://github.com/pedrohpereira74/sadr/releases/download/v0.4.3/sadr_Darwin_arm64.tar.gz"
+      sha256 "e3815255cad2b4eeba129cc671defaeeabd63b50a32f4e5f362f10daba03bb60"
 
       define_method(:install) do
         bin.install "sadr"
@@ -29,15 +29,15 @@ class Sadr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pedrohpereira74/sadr/releases/download/v0.4.2/sadr_Linux_x86_64.tar.gz"
-      sha256 "96114c3fcf50effbb8adf61a491ddab38f742606f3b22502e52f2d0f032e232b"
+      url "https://github.com/pedrohpereira74/sadr/releases/download/v0.4.3/sadr_Linux_x86_64.tar.gz"
+      sha256 "c9b90fc75b9205d07b36a0ccb69262305591f941352229d6d91647684942806a"
       define_method(:install) do
         bin.install "sadr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pedrohpereira74/sadr/releases/download/v0.4.2/sadr_Linux_arm64.tar.gz"
-      sha256 "c1d1f59768a7fbfcebd0d71ce9a8a0e1c86195f7eb6ae0ff082f08c0c32f75b1"
+      url "https://github.com/pedrohpereira74/sadr/releases/download/v0.4.3/sadr_Linux_arm64.tar.gz"
+      sha256 "23a150592920b08b06b9918a400e131d5aea433e121b853ab8a4f108bcd5c2e9"
       define_method(:install) do
         bin.install "sadr"
       end
